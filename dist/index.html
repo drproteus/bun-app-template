@@ -11,9 +11,11 @@
 
 <body>
     <h1 hidden>Loading...</h1>
-    <div id="status"></div>
-    <img id="sprite" style="position: relative; left: 0; top: 0" src="images/cat.png">
-    </div>
 </body>
+
+<script type="text/template" id="sprite-template">
+    <p style="position: relative; top: 25px; left: 0px; white-space: nowrap;"><%= message %></p>
+    <img src="<%= image %>">
+</script>
 
 </html>
