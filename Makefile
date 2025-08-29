@@ -1,4 +1,4 @@
-dist/js/app.js: install
+dist/js/app.js:
 	bun run build.js
 
 .PHONY: install
