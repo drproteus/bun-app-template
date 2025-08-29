@@ -1,6 +1,8 @@
 import _ from "lodash";
-import $ from "jquery";
 import Backbone from "backbone";
+
+const SpriteTemplate = `<img src="<%= image %>">
+<p class="message"><%= message %></p>`;
 
 export class Sprite extends Backbone.Model {
   defaults() {
@@ -22,7 +24,7 @@ export class Sprite extends Backbone.Model {
 
 export class SpriteView extends Backbone.View {
   template() {
-    return _.template($("#sprite-template").html());
+    return _.template(SpriteTemplate);
   }
 
   initialize() {
