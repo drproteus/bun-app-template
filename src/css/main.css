@@ -6,3 +6,30 @@
 body * {
     font-family: "Garamond" !important;
 }
+
+h1 {
+    color: #eee;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background: linear-gradient(45deg, #1cb5e0 0%, #000851 100%);
+}
+
+#main {
+    height: 300px;
+    width: 400px;
+}
+
+.box {
+    background: #eee;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.message {
+    position: absolute;
+    top: -2px;
+    left: 25px;
+}

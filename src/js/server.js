@@ -5,7 +5,7 @@ console.log(`Starting development server: http://localhost:${PORT}`);
 Bun.serve({
   port: PORT,
   routes: {
-    "/api/version": Response.json("v1"),
+    "/api/version": Response.json("v1")
   },
   async fetch(req) {
     let path = new URL(req.url).pathname;
