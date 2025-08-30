@@ -28,7 +28,7 @@ export class SpriteView extends Backbone.View {
   }
 
   initialize() {
-    this.model.on("change:image change:x change:y", this.render.bind(this))
+    this.model.on("change:image change:x change:y", this.render.bind(this));
   }
 
   render() {
